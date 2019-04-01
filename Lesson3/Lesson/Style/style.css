@@ -1,0 +1,51 @@
+#box1 {
+    background-color:yellow;
+    margin: 0 auto;             /* zentrieren von Elementen */
+    }
+
+#box2 {
+    background-color:blue;
+    padding: 50px;
+    }
+
+#box3 {
+    background-color:green;
+    border: 3px solid black;
+    }
+
+#box4{
+    background-color: yellow;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+}
+
+#box5{
+    position: relative;     /*Feld an ursprünglicher Stelle bleibt frei und Box verschiebt sich*/
+    top: 400px;
+    left: 50px;
+    background-color:blue;
+}
+
+#box6{
+    position: absolute;
+    top:50px;
+    left: 50px;
+    background-color:green;
+}
+
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: red;
+
+    }
+
+#container2 {
+margin: 200px 0 0 50px
+    }
+
+.inline {
+    display: inline;
+}
+

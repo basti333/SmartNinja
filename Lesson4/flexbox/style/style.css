@@ -1,0 +1,32 @@
+@media (min-width: 400px) {
+
+.container {
+    display: flex;
+    justify-content: space-around;  /* auf allen Seiten bisschen Platz */
+    flex-wrap: wrap;
+    }
+
+.box {
+    width: 100%;
+    }
+
+}
+
+
+
+.box {
+    width: 30%;
+    }
+
+#main {
+
+    }
+
+#left {
+
+    }
+
+#right {
+
+    }
+

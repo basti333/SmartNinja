@@ -1,0 +1,67 @@
+.container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+.logo {
+    height: 150px;
+    text-align: center;
+    }
+
+.boogle {
+    height: 150px;
+    width: auto;
+    }
+
+.divinput {
+    margin: 20px auto 20px auto;
+    text-align: center;
+}
+
+#input {
+    width: 550px;
+    padding: 15px;
+    margin: 10px 0px 0px 0px;
+    border-radius: 50px;
+    font-size: 12px;
+    border: solid 0.5px rgb(242,242,242);
+    box-shadow: 2px 2px 2px 2px rgb(242,242,242);
+    }
+
+#input:focus {
+    outline: none;
+    border: solid 1px rgb(200,200,200);
+    border-radius: 50px;
+}
+
+.divbutton {
+
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    }
+
+.button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 0.5px rgb(242,242,242);
+    font-size: 14px;
+    color: rgb(100,104,104);
+    background-color: rgb(242,242,242);
+}
+
+.button:hover {
+    color: black;
+    border: solid 0.5px rgb(150,150,150);
+    }
+
+.button:focus {
+    outline: none;
+    border: solid 0.5px blue;
+    border-radius: 5px;
+}
+
