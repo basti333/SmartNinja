@@ -1,14 +1,17 @@
 secret = 333
 
-guess = int(input("What's the secret number? \n"))
+loser = True
 
 
-if secret == guess:
-    print("Awesome!")
+while(loser):
+    guess = int(input("What's the secret number? \n"))
 
-if secret != guess:
-    print("Try again, loser!")
 
-while secret != guess:
-    print ("Wrong!")
-    secret+=1
+    if secret == guess:
+        print("Awesome!")
+        loser = False
+    elif secret < guess:
+        print("Too high, loser! Try Again!")
+    elif secret > guess:
+        print("Too low, loser! Try Again!")
+
