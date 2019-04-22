@@ -1,5 +1,3 @@
-print("Hallo beim Temperaturumwandler.")
-
 while True:
     answ = input("""Welche Umwandlung möchtest du durchführen?
     1 Umrechnung von Celsius nach Kelvin
