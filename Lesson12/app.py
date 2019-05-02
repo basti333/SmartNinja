@@ -278,3 +278,19 @@ for index in range(5):                  #if statement im for loop
     else:
         print("not first")
 
+
+#EXPONENT FUNCTION
+
+print(2**3)         #= 2^3
+
+def raise_to_power(base_num, pow_num):
+    result = 1                              #hier wird das Ergebnis gespeichert
+    for index in range(pow_num):            #so oft wie pow_num angibt wird durchgeloopt
+        result = result * base_num          #das result wird jedes mal mit base_num multipliziert und gespeichert bis loop zu ende ist
+    return result
+
+print(raise_to_power(2, 4))
+
+
+#2D LISTS & NESTED LOOPS
+

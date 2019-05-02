@@ -53,12 +53,19 @@ def new_player():
     first_name = input("First name: ")
     last_name = input("Last name: ")
     height_cm = input("Height: ")
+    weight_kg = input("Weight: ")
+    goals = input("Goals: ")
 
 
-    Player = Basketball_Player(first_name, last_name)
+    new_player = Football_Player(first_name, last_name, height_cm, weight_kg, goals)
 
-    return Player
+    return new_player
+
 
 new_player()
 
-print(Player)
+players.append()
+with open("players.txt", "w") as players:
+    players.write(json.dumps(players))
+
+print(new_player)
