@@ -1,7 +1,6 @@
 import json
 
 
-
 class Player():
     def __init__(self, first_name, last_name, height_cm, weight_kg):
         self.first_name = first_name
@@ -27,45 +26,28 @@ class Football_Player(Player):
         super().__init__(first_name=first_name, last_name=last_name, height_cm=height_cm, weight_kg=weight_kg)
         self.goals = goals
 
-if __name__ == "__main__":         #wird verwendet um zu TESTEN, funktioniert nur in der eigenen Datei
 
-    jordan = Basketball_Player("Michael", "Jordan", 205, 90, 150, 69, 33)
-    dirk = Basketball_Player("Dirk", "Nowitzki", 210, 100, 130, 23, 90)
-    marko = Football_Player("Marko", "Arnautovic", 175, 80, 77)
-
-    dirk.set_points(189)
-
-    player = [jordan, dirk, marko]
-
-
-
-    for item in player:
-        print(item.first_name)
-        print(item.weight_kg)
-
-    print(marko.goals)
 
 
 #zuerst Funktion erstellen und vom User jeden einzelen Parameter abfragen
 #dann mit Return das Objekt erzeugen
 
-def new_player():
+def new_football_player():
     first_name = input("First name: ")
     last_name = input("Last name: ")
-    height_cm = input("Height: ")
-    weight_kg = input("Weight: ")
-    goals = input("Goals: ")
+    height_cm = int(input("Height: "))
+    weight_kg = int(input("Weight: "))
+    goals = int(input("Goals: "))
 
 
-    new_player = Football_Player(first_name, last_name, height_cm, weight_kg, goals)
-
-    return new_player
+    return Football_Player(first_name, last_name, height_cm, weight_kg, goals)
 
 
-new_player()
 
-players.append()
-with open("players.txt", "w") as players:
-    players.write(json.dumps(players))
+if __name__ == "__main__":         #wird verwendet um zu TESTEN, funktioniert nur in der eigenen Datei
+    player1 = new_football_player()
 
-print(new_player)
+
+    with open("Football_Player.json", "w") as json_file:
+        json_file.write(json.dumps(player1.__dict__))
+

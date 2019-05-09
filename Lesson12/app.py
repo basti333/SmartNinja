@@ -294,3 +294,15 @@ print(raise_to_power(2, 4))
 
 #2D LISTS & NESTED LOOPS
 
+number_grid = [         #so kann eine 2D Liste mit Reihen und Spalten erzeugt werden
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+
+print(number_grid[2][1])   #in der ersten Klammer wird die Reihe aufgerufen, in der zweiten die Spalte
+
+for row in number_grid:
+    for col in row:
+        print(col)
