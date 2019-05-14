@@ -15,7 +15,7 @@ def play_game():
 
         if guess == secret:
             score_list.append({"attempts": attempts, "date": str(datetime.datetime.now())})
-            with open("score_list.txt", "w") as score_file:
+            with open("score_list.txt", "w") as score_file:             #w steht für write, der andere Inhalt wird überschrieben, a steht für append, hier wird neuer Inhalt hinzugefügt
                 score_file.write(json.dumps(score_list))
 
             print("You've guessed it - congratulations! It's number " + str(secret))
