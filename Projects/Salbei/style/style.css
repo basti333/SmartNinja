@@ -1,0 +1,52 @@
+html, body {
+    font-family: Amatic SC, sans-serif;
+    }
+
+#title {
+    font-size: 50px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.header {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-right: auto;
+    }
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+li {
+    float: right;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+    }
+
+.articlename {
+    margin-top: 50px;
+    font-size: 32px;
+}
+
+.article {
+    font-size: 20px;
+    width: 600px;
+    margin: 0 auto;
+}
