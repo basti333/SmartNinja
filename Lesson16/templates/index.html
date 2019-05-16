@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+    <title>Index</title>
+{% endblock title %}
+
+{% block content %}
+
+    <h1>{{page_title}}</h1>
+    <p>Current year: {{current_year}}</p>
+
+    {% for city in cities %}
+        <p>{{city}}</p>
+    {% endfor %}
+
+    {% if cities %}
+        <p>Cities exist.</p>
+    {% else %}
+        <p>No cities.</p>
+    {% endif %}
+
+    <p>Hello, index.html here!</p>
+{% endblock content %}
