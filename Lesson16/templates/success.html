@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Success</title>
+{% endblock title %}
+
+{% block content %}
+<h3>Success!</h3>
+
+<p>Your message was successfully received. Thank you!</p>
+
+
+<h3>Name: </h3>
+<h3>{{user_name}}</h3>
+
+
+<h3>Mail: </h3>
+<h3>{{contact_email}}</h3>
+
+<h3>Message: </h3>
+<p>{{contact_message}}<p>
+
+{% endblock content %}
