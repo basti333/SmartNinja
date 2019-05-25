@@ -14,19 +14,19 @@ def solution():
 
     if operation == "+":
         solution = (num_1 + num_2)
-        response = make_response(render_template("index.html", solution=solution))
+        response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
         return response
     elif operation == "-":
         solution = (num_1 - num_2)
-        response = make_response(render_template("index.html", solution=solution))
+        response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
         return response
     elif operation == "*":
         solution = (num_1 * num_2)
-        response = make_response(render_template("index.html", solution=solution))
+        response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
         return response
     elif operation == "/":
         solution = (num_1 / num_2)
-        response = make_response(render_template("index.html", solution=solution))
+        response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
         return response
     else:
         solution = "Bei der Eingabe ist etwas schief gelaufen. Bitte versuche es erneut."
