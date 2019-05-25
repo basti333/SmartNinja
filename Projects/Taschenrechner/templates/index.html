@@ -2,23 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Taschenrechner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="static/css/style.css">
+    <title>Taschenrechner</title>
 </head>
 <body>
- <form method="post" action="/">
-        <input type="number" step="any" name="num_1" placeholder="Zahl">
+
+<h1>Basti's Taschenrechner</h1>
+
+<div>
+    <form method="post" action="/">
+        <input class="eingabe" type="number" step="any" name="num_1" placeholder="Zahl">
         <br>
-        <input type="text" name="operation" placeholder="+ - * /">
+        <input type="radio" name="operation" value="+"> +
+        <input type="radio" name="operation" value="-"> -
+        <input type="radio" name="operation" value="*"> *
+        <input type="radio" name="operation" value="/"> /
         <br>
         <input type="number" step="any" name="num_2" placeholder="Zahl">
         <br>
         <button type="submit">=</button>
- </form>
+    </form>
+</div>
 
 {% if solution %}
-<h3>{{num_1}} {{operation}} {{num_2}} = {{solution}}</h3>
+<div class="container text-center"
+    <h4>{{num_1}} {{operation}} {{num_2}} = {{solution}}</h4>
+</div>
 {% endif %}
+
+
 
 </body>
 </html>
