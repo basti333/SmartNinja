@@ -12,25 +12,25 @@ def solution():
     operation = request.form.get("operation")
     num_2 = float(request.form.get("num_2"))
 
-    if operation == "+":
-        solution = (num_1 + num_2)
-        response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
-        return response
-    elif operation == "-":
-        solution = (num_1 - num_2)
-        response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
-        return response
-    elif operation == "*":
-        solution = (num_1 * num_2)
-        response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
-        return response
-    elif operation == "/":
-        solution = (num_1 / num_2)
-        response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
-        return response
-    else:
-        solution = "Bei der Eingabe ist etwas schief gelaufen. Bitte versuche es erneut."
-        response = make_response(render_template("index.html", solution=solution))
+    try:
+        if operation == "+":
+            solution = (num_1 + num_2)
+            response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
+            return response
+        elif operation == "-":
+            solution = (num_1 - num_2)
+            response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
+            return response
+        elif operation == "*":
+            solution = (num_1 * num_2)
+            response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
+            return response
+        elif operation == "/":
+            solution = (num_1 / num_2)
+            response = make_response(render_template("index.html", solution=solution, num_1=num_1, num_2=num_2, operation=operation))
+            return response
+    except ZeroDivisionError:
+        response = "Division durch Null ist nicht möglich!"
         return response
 
 if __name__ == "__main__":

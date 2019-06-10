@@ -1,0 +1,24 @@
+html, body {
+    font-family: Helvetica, sans-serif;
+}
+
+.header {
+    font-size: 30px;
+    color: rgb(50,50,50);
+}
+
+.eingabe {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.send {
+    height: 30px;
+    width: 30px;
+}
+
+.ergebnis {
+    font-size: 20px;
+}

@@ -306,3 +306,47 @@ print(number_grid[2][1])   #in der ersten Klammer wird die Reihe aufgerufen, in 
 for row in number_grid:
     for col in row:
         print(col)
+
+
+#BUILD A TRANSLATOR
+
+#Giraffe Language
+#vowels --> g
+
+def translate(phrase):
+    translation = ""
+    for letter in phrase:
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                translation = translation + "G"
+            else:
+                translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+
+print(translate(input("Enter a phrase: ")))
+
+
+#TRY EXCEPT
+
+try:
+    value = 10 / 0
+    number = int(input("Enter a number: "))
+    print(number)
+
+except ZeroDivisionError as err:
+    print(err)
+
+except ValueError:
+    print("Invalid input")
+
+
+#READING FILES
+
+employee_file = open("employees.txt", "r")
+
+print(employee_file.readlines()[2])
+
+employee_file.close()
